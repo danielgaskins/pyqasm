@@ -25,8 +25,8 @@ from openqasm3.ast import Include, Program
 
 from pyqasm.exceptions import ValidationError, raise_qasm3_error
 from pyqasm.modules.base import QasmModule, QasmVisitor
-from pyqasm.modules.qasm2_printer import Qasm2Printer, validate_branch
 from pyqasm.modules.qasm3 import Qasm3Module, dumps
+from pyqasm.printer import Qasm2Printer, validate_branch
 
 
 class Qasm2Module(QasmModule):
